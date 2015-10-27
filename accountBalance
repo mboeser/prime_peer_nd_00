@@ -1,0 +1,13 @@
+var randomNumber = require('./randomNumber');
+var convertCurrency = require('./convertCurrency');
+
+var finalNumber = function (x,y) {
+  return(convertCurrency(randomNumber(x,y)));
+};
+
+var accountBalance = function (){
+  return "Account Balance:\n";
+};
+
+module.exports.finalNumber = finalNumber;
+module.exports.accountBalance = accountBalance;
